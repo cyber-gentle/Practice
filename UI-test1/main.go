@@ -41,7 +41,7 @@ func main() {
 		c_index, _ := strconv.Atoi(index)
 
 		if c_index >= len(word) || c_index < 0 {
-			fmt.Printf("Total index for the word is" len(word)-1"\n Selected index is out of range")
+			fmt.Println("Index is out of range")
 		}
 		result := word[:c_index] + word[c_index+1:]
 		fmt.Printf("The word %q without index [%d] is %v\n", word, c_index, result)
