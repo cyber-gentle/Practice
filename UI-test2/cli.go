@@ -31,6 +31,8 @@ func main() {
 			result := num1 + num2
 			fmt.Printf("%d + %d is = %d\n", num1, num2, result)
 
+			fmt.Println("Do you want add another set of numbers?\n 1. Yes")
+
 		case 2:
 			fmt.Print("Enter first number: ")
 			fmt.Scanln(&num1)
@@ -56,7 +58,8 @@ func main() {
 			fmt.Printf("%d ÷ %d is = %d\n", num1, num2, result)
 
 		case 5:
-			break
+			fmt.Println("Exiting...")
+			return
 		}
 	}
 }
