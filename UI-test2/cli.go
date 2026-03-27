@@ -30,7 +30,33 @@ func main() {
 			fmt.Scanln(&num2)
 			result := num1 + num2
 			fmt.Printf("%d + %d is = %d\n", num1, num2, result)
+
+		case 2:
+			fmt.Print("Enter first number: ")
+			fmt.Scanln(&num1)
+			fmt.Print("Enter second number: ")
+			fmt.Scanln(&num2)
+			result := num1 - num2
+			fmt.Printf("%d - %d is = %d\n", num1, num2, result)
+
+		case 3:
+			fmt.Print("Enter first number: ")
+			fmt.Scanln(&num1)
+			fmt.Print("Enter second number: ")
+			fmt.Scanln(&num2)
+			result := num1 * num2
+			fmt.Printf("%d x %d is = %d\n", num1, num2, result)
+
+		case 4:
+			fmt.Print("Enter first number: ")
+			fmt.Scanln(&num1)
+			fmt.Print("Enter second number: ")
+			fmt.Scanln(&num2)
+			result := num1 / num2
+			fmt.Printf("%d ÷ %d is = %d\n", num1, num2, result)
+
+		case 5:
+			break
 		}
-		break
 	}
 }
