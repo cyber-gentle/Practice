@@ -1,4 +1,4 @@
-module practice
+module pass_piscine
 
 go 1.22.2
 

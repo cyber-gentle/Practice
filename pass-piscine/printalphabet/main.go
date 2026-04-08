@@ -1,4 +1,4 @@
-package practice
+package pass_piscine
 
 import (
 	"github.com/01-edu/z01"
