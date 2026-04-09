@@ -1,10 +1,13 @@
 package main
 
 import (
+	"fmt"
 	//"github.com/01-edu/z01"
 )
 
 func main() {
-	PrintStr("Hello World!")
+	l := StrLen("Hello World!")
+	fmt.Println(l)
 }
+
 
