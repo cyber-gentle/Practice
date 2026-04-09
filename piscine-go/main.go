@@ -5,8 +5,6 @@ import (
 )
 
 func main() {
-	PrintCombN(1)
-	PrintCombN(3)
-	PrintCombN(9)
+
 
 }

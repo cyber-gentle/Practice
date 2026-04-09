@@ -9,6 +9,7 @@ func PrintNbr(n int) {
 	nb := rune(n)
 	fmt.Print(nb)
 
-	//z01.PrintRune(rune(n)) to be done later
+	//z01.PrintRune(rune(n)) 	
+	//	TO BE DONE LATER
 
 }
