@@ -32,20 +32,25 @@ func palindrome(s string) string {
 
 }
 
-func toSnakeCase(s string) string {
-	word :=  strings.ReplaceAll(s, " ", "_")
-	for i, char := range word {
-		if char != 0-9 {
+// func toSnakeCase(s string) string {
+// 	word :=  strings.ReplaceAll(s, " ", "_")
+// 	for i, char := range word {
+// 		if char != 0-9 {
 
-		}
-	}
+// 		}
+// 	}
 
-	return strings.ToLower(word)
-}
-
-// func capitalizeCase(s string) string {
-// 	return strings.ToLower(s)
+// 	return strings.ToLower(word)
 // }
+
+func capitalizeCase(s string) string {
+	word := strings.Fields(s)
+	for i:= 0; i < len(word); i++ {
+		word[i] = strings.ToUpper(string(word[i][0])) + strings.ToLower(string(word[i][1:]))
+	}
+	s = strings.Join(word, " ")
+	return s
+}
 
 func main() {
 
@@ -79,7 +84,11 @@ start:
 			goto start
 
 		case "snake":
-			fmt.Printf(" → %v\n \n", toSnakeCase(words))
+			//fmt.Printf(" → %v\n \n", toSnakeCase(words))
+			goto start
+
+			case "cap":
+			fmt.Printf(" → %v\n \n", capitalizeCase(words))
 			goto start
 
 		case "palindrome":
